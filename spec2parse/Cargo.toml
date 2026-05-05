@@ -1,0 +1,17 @@
+[package]
+name = "spec2parse"
+version = "0.1.0"
+edition = "2024"
+build = "buildinfo.rs"
+
+[dependencies]
+clap = { version = "4.6.1", default-features = false, features = ["std", "help", "string", "derive", "unicode"] }
+regex = "1.12.3"
+glob = "0.3.3"
+roxmltree = "0.21.1"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+chrono = "0.4.44"
+
+[build-dependencies]
+chrono = "0.4.44"
